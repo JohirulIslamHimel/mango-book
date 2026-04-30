@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-16 pb-8 mt-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 mb-10 text-center md:text-left">
           {/*  Logo and description */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center md:items-start">
             <h2 className="text-2xl font-bold text-white italic">
               Mango<span className="text-purple-500">Book</span>
             </h2>
@@ -26,20 +26,20 @@ const Footer = () => {
           </div>
 
           {/*  Contact Us */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center md:items-start">
             <h3 className="text-lg font-semibold text-white">Contact Us</h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 text-sm hover:text-purple-400 transition-colors cursor-pointer">
+              <li className="flex items-center justify-center md:justify-start gap-3 text-sm hover:text-purple-400 transition-colors cursor-pointer">
                 <FaEnvelope className="text-purple-500" /> support@mangobook.com
               </li>
-              <li className="flex items-center gap-3 text-sm hover:text-purple-400 transition-colors cursor-pointer">
-                <FaPhone className="text-purple-500" /> +880 1712-345678
+              <li className="flex items-center justify-center md:justify-start gap-3 text-sm hover:text-purple-400 transition-colors cursor-pointer">
+                <FaPhone className="text-purple-500" /> +880 1741-902012
               </li>
             </ul>
           </div>
 
           {/*  Social media links */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center md:items-start md:col-span-2 lg:col-span-1">
             <h3 className="text-lg font-semibold text-white">Follow Us</h3>
             <div className="flex gap-4">
               <a
