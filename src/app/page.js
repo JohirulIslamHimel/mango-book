@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "@/components/home/Banner";
 import LatestNews from "@/components/home/LatestNews";
 import FeaturedBooks from "@/components/home/FeaturedBooks";
+import Features from "@/components/home/Features";
 
 const HomePage = () => {
   const books = [
@@ -45,6 +46,7 @@ const HomePage = () => {
       <Banner></Banner>
       <LatestNews></LatestNews>
       <FeaturedBooks books={books}></FeaturedBooks>
+      <Features></Features>
     </div>
   );
 };
