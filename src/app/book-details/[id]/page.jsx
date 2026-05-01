@@ -1,8 +1,18 @@
-import React from "react";
+import BorrowButton from "@/components/BorrowButton";
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 export default async function BookDetails({ params }) {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+
+  if (!session) {
+    redirect("/login");
+  }
+
   const { id } = await params;
 
   const res = await fetch(`${process.env.BETTER_AUTH_URL}/books.json`, {
@@ -46,9 +56,7 @@ export default async function BookDetails({ params }) {
             </span>
           </div>
 
-          <button className="btn btn-primary mt-8 px-10 bg-purple-600 hover:bg-purple-700 border-none">
-            Borrow This Book
-          </button>
+          <BorrowButton stock={book.available_quantity}></BorrowButton>
         </div>
       </div>
     </div>
