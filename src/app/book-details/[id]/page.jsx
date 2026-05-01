@@ -33,8 +33,8 @@ export default async function BookDetails({ params }) {
           <Image
             src={book.image_url}
             alt={book.title}
-            width={400}
-            height={500}
+            width={500}
+            height={700}
             className="rounded-2xl shadow-md object-cover"
           />
         </div>
