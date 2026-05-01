@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent River",
+    "author": "Ayesha Rahman",
+    "description": "A touching story of a village girl discovering her strength amidst adversity.",
+    "category": "Story",
+    "available_quantity": 12,
+    "image_url": "https://example.com/images/silent-river.jpg"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Mastery",
+    "author": "Imran Hossain",
+    "description": "A complete guide to modern JavaScript, from basics to advanced concepts.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://example.com/images/js-mastery.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Mystery of the Night",
+    "author": "Farhana Kabir",
+    "description": "A suspenseful tale of secrets hidden in a quiet town.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://example.com/images/mystery-night.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Science of Space",
+    "author": "Dr. Arif Chowdhury",
+    "description": "Explore the wonders of the universe and the science behind it.",
+    "category": "Science",
+    "available_quantity": 10,
+    "image_url": "https://example.com/images/science-space.jpg"
+  },
+  {
+    "id": 5,
+    "title": "React in Action",
+    "author": "Nusrat Jahan",
+    "description": "Learn how to build scalable web apps using React.js step by step.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://example.com/images/react-action.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Lost in the Forest",
+    "author": "Tanvir Islam",
+    "description": "An adventurous journey of survival and courage in the wild.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://example.com/images/lost-forest.jpg"
+  },
+  {
+    "id": 7,
+    "title": "AI Fundamentals",
+    "author": "Sabbir Ahmed",
+    "description": "An introduction to artificial intelligence and its real-world applications.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://example.com/images/ai-fundamentals.jpg"
+  },
+  {
+    "id": 8,
+    "title": "The Human Brain",
+    "author": "Dr. Shila Sultana",
+    "description": "A deep dive into how the brain works and controls the human body.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://example.com/images/human-brain.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Ocean Secrets",
+    "author": "Rafiq Hasan",
+    "description": "Discover the mysteries hidden beneath the ocean surface.",
+    "category": "Science",
+    "available_quantity": 11,
+    "image_url": "https://example.com/images/ocean-secrets.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Last Letter",
+    "author": "Mim Akter",
+    "description": "A heartfelt story about love, loss, and memories.",
+    "category": "Story",
+    "available_quantity": 13,
+    "image_url": "https://example.com/images/last-letter.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Python for Beginners",
+    "author": "Rakib Hasan",
+    "description": "Start your programming journey with Python in an easy and practical way.",
+    "category": "Tech",
+    "available_quantity": 15,
+    "image_url": "https://example.com/images/python-beginners.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Quantum Physics Simplified",
+    "author": "Dr. Kamal Uddin",
+    "description": "Understand the basics of quantum physics in a simplified manner.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://example.com/images/quantum-physics.jpg"
+  }
+]
