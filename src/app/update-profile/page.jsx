@@ -13,10 +13,14 @@ export default function UpdateProfile() {
 
   useEffect(() => {
     if (session?.user) {
-      setName(session.user.name || "");
-      setImage(session.user.image || "");
+      if (name === "" && session.user.name) {
+        setName(session.user.name);
+      }
+      if (image === "" && session.user.image) {
+        setImage(session.user.image);
+      }
     }
-  }, [session]);
+  }, [session, name, image]);
 
   const handleUpdate = async (e) => {
     e.preventDefault();
