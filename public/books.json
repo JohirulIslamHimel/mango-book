@@ -6,7 +6,7 @@
     "description": "A touching story of a village girl discovering her strength amidst adversity.",
     "category": "Story",
     "available_quantity": 12,
-    "image_url": "https://example.com/images/silent-river.jpg"
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8lKjriP9pyTw--xnTgCw-rGBDX-g537I4g&s"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "A complete guide to modern JavaScript, from basics to advanced concepts.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "https://example.com/images/js-mastery.jpg"
+    "image_url": "https://m.media-amazon.com/images/I/61RLX9RI8WL._UF1000,1000_QL80_.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "A suspenseful tale of secrets hidden in a quiet town.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://example.com/images/mystery-night.jpg"
+    "image_url": "https://m.media-amazon.com/images/I/71ftvoougQL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "Explore the wonders of the universe and the science behind it.",
     "category": "Science",
     "available_quantity": 10,
-    "image_url": "https://example.com/images/science-space.jpg"
+    "image_url": "https://m.media-amazon.com/images/I/91ePEJyQ22L._AC_UF894,1000_QL80_.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Learn how to build scalable web apps using React.js step by step.",
     "category": "Tech",
     "available_quantity": 7,
-    "image_url": "https://example.com/images/react-action.jpg"
+    "image_url": "https://avatars.githubusercontent.com/u/20017974?s=280&v=4"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "An adventurous journey of survival and courage in the wild.",
     "category": "Story",
     "available_quantity": 9,
-    "image_url": "https://example.com/images/lost-forest.jpg"
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jNRK7w6zaFV6heZMWiCAG45h1K8A7DR2Ow&s"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "An introduction to artificial intelligence and its real-world applications.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "https://example.com/images/ai-fundamentals.jpg"
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQ3_5XY09a0a78iFBfH2GeukccUXDw0VEOg&s"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "A deep dive into how the brain works and controls the human body.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "https://example.com/images/human-brain.jpg"
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGVqL-sxPIDgNJd2kqyAivVk7UoHLm2iIIDg&s"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "Discover the mysteries hidden beneath the ocean surface.",
     "category": "Science",
     "available_quantity": 11,
-    "image_url": "https://example.com/images/ocean-secrets.jpg"
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHURYK6Ptwa6VaNnlPBm4p1hpvAmj4Wpn_Rg&s"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "A heartfelt story about love, loss, and memories.",
     "category": "Story",
     "available_quantity": 13,
-    "image_url": "https://example.com/images/last-letter.jpg"
+    "image_url": "https://m.media-amazon.com/images/I/81mrHyhbtTL.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "Start your programming journey with Python in an easy and practical way.",
     "category": "Tech",
     "available_quantity": 15,
-    "image_url": "https://example.com/images/python-beginners.jpg"
+    "image_url": "https://m.media-amazon.com/images/I/51MgIyxkgiL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "description": "Understand the basics of quantum physics in a simplified manner.",
     "category": "Science",
     "available_quantity": 3,
-    "image_url": "https://example.com/images/quantum-physics.jpg"
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1642561622i/60157978.jpg"
   }
 ]
