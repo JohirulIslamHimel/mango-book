@@ -2,6 +2,7 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function MyProfilePage() {
   const session = await auth.api.getSession({
@@ -77,9 +78,11 @@ export default async function MyProfilePage() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
-              <button className="btn btn-primary bg-purple-600 hover:bg-purple-700 border-none px-8">
-                Edit Profile
-              </button>
+              <Link href="/update-profile">
+                <button className="btn btn-primary bg-purple-600 hover:bg-purple-700 border-none px-8">
+                  Edit Profile
+                </button>
+              </Link>
               <button className="btn btn-outline border-slate-200 hover:bg-slate-100 hover:text-slate-800 px-8">
                 Account Settings
               </button>
