@@ -30,7 +30,7 @@ const BookListWithSearch = ({ books }) => {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`text-left px-4 py-3 rounded-lg transition-all font-semibold text-sm ${
+                className={`text-left px-4 py-3 rounded-lg transition-all font-semibold text-sm cursor-pointer ${
                   selectedCategory === category
                     ? "bg-purple-600 text-white shadow-md"
                     : "bg-slate-50 text-slate-600 hover:bg-slate-100"
@@ -59,7 +59,7 @@ const BookListWithSearch = ({ books }) => {
             {filteredBooks.map((book) => (
               <div
                 key={book.id}
-                className="card bg-base-100 shadow-xl border border-slate-100 hover:scale-105 transition-transform"
+                className="card bg-base-100 shadow-xl border border-slate-100 hover:scale-105 transition-transform cursor-pointer"
               >
                 <figure className="px-4 pt-4">
                   <Image

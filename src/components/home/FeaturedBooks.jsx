@@ -22,7 +22,10 @@ const FeaturedBooks = ({ books }) => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {topFourBooks?.map((book) => (
-          <div key={book.id}>
+          <div
+            key={book.id}
+            className="cursor-pointer hover:-translate-y-3 transition-all duration-300 group"
+          >
             <div className="relative bg-gray-100 rounded-xl h-60 mb-4 overflow-hidden">
               <Image
                 src={book.image_url}

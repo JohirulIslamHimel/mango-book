@@ -17,33 +17,41 @@ const RegisterPage = () => {
 
   const [isShowPassword, setIsShowPassword] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleRegisterFun = async (data) => {
     const { email, name, photo, password } = data;
 
-    const { data: res, error } = await authClient.signUp.email({
-      name: name,
-      email: email,
-      password: password,
-      image: photo,
-      callbackURL: "/login",
-    });
+    setIsLoading(true);
 
-    console.log(res, error);
+    try {
+      const { data: res, error } = await authClient.signUp.email({
+        name: name,
+        email: email,
+        password: password,
+        image: photo,
+      });
 
-    if (error) {
-      alert(error.message);
-    }
-    if (res) {
-      alert("Signup successful");
-      router.push("/login");
+      if (error) {
+        toast.error(error.message || "Registration failed!");
+      }
+
+      if (res) {
+        toast.success("Signup successful! Please login.");
+
+        router.push("/login");
+      }
+    } catch (err) {
+      toast.error("Something went wrong!");
+    } finally {
+      setIsLoading(false);
     }
   };
-  console.log(errors);
 
   const handleGoogleLogin = async () => {
     await authClient.signIn.social({
       provider: "google",
-      callbackURL: "/",
+      callbackURL: "/login",
     });
   };
 
@@ -147,8 +155,11 @@ const RegisterPage = () => {
 
             {/* Register Button */}
             <div className="form-control mt-4">
-              <button className="btn bg-slate-800 text-white hover:bg-slate-700">
-                Register
+              <button
+                disabled={isLoading}
+                className="btn bg-slate-800 text-white hover:bg-slate-700"
+              >
+                {isLoading ? "Registering..." : "Register"}
               </button>
             </div>
           </form>
