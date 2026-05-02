@@ -24,7 +24,7 @@ const Navbar = () => {
         <NavLink href="/all-books">All Books</NavLink>
       </li>
       <li>
-        <NavLink href="/profile">My Profile</NavLink>
+        <NavLink href="/my-profile">My Profile</NavLink>
       </li>
     </>
   );
