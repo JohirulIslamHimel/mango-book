@@ -31,6 +31,7 @@ const FeaturedBooks = ({ books }) => {
                 className="object-cover"
               />
             </div>
+
             <h3 className="text-xl font-bold text-gray-800 truncate">
               {book.title}
             </h3>
