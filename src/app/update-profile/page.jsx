@@ -16,7 +16,7 @@ export default function UpdateProfile() {
       setName(session.user.name || "");
       setImage(session.user.image || "");
     }
-  }, [session, name, image]);
+  }, [session]);
 
   const handleUpdate = async (e) => {
     e.preventDefault();
