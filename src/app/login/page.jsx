@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 
 const LoginPage = () => {
@@ -17,26 +18,37 @@ const LoginPage = () => {
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   const handleLoginFun = async (data) => {
-    const { data: res, error } = await authClient.signIn.email({
-      email: data.email,
-      password: data.password,
-      callbackURL: "/",
-    });
+    const toastId = toast.loading("Logging in...");
 
-    if (error) {
-      alert(error.message);
-    }
-    if (res) {
-      alert("Signin successful");
-      router.push("/");
+    try {
+      const { data: res, error } = await authClient.signIn.email({
+        email: data.email,
+        password: data.password,
+        callbackURL: "/",
+      });
+
+      if (error) {
+        toast.error(error.message || "Invalid credentials", { id: toastId });
+      }
+
+      if (res) {
+        toast.success("Signin successful!", { id: toastId });
+        router.push("/");
+      }
+    } catch (err) {
+      toast.error("Something went wrong!", { id: toastId });
     }
   };
 
   const handleGoogleLogin = async () => {
-    await authClient.signIn.social({
-      provider: "google",
-      callbackURL: "/",
-    });
+    try {
+      await authClient.signIn.social({
+        provider: "google",
+        callbackURL: "/",
+      });
+    } catch (err) {
+      toast.error("Google login failed!");
+    }
   };
   return (
     <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100 p-4">

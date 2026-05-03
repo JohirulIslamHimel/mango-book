@@ -13,12 +13,8 @@ export default function UpdateProfile() {
 
   useEffect(() => {
     if (session?.user) {
-      if (name === "" && session.user.name) {
-        setName(session.user.name);
-      }
-      if (image === "" && session.user.image) {
-        setImage(session.user.image);
-      }
+      setName(session.user.name || "");
+      setImage(session.user.image || "");
     }
   }, [session, name, image]);
 

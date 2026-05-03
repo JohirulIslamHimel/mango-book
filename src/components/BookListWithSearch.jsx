@@ -109,7 +109,7 @@ const BookListWithSearch = ({ books }) => {
           {/* No Results Found */}
           {filteredBooks.length === 0 && (
             <div className="text-center mt-20 text-gray-400">
-              No books found with "{searchQuery}"
+              {`No books found with "${searchQuery}"`}
             </div>
           )}
         </div>

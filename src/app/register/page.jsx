@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
+import { toast } from "react-hot-toast";
 
 const RegisterPage = () => {
   const router = useRouter();
@@ -49,10 +50,14 @@ const RegisterPage = () => {
   };
 
   const handleGoogleLogin = async () => {
-    await authClient.signIn.social({
-      provider: "google",
-      callbackURL: "/login",
-    });
+    try {
+      await authClient.signIn.social({
+        provider: "google",
+        callbackURL: "/",
+      });
+    } catch (err) {
+      toast.error("Google login failed!");
+    }
   };
 
   return (
@@ -70,7 +75,7 @@ const RegisterPage = () => {
         {/* Form card */}
         <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
           <form
-            className="card-body gap-4"
+            className="card-body pb-4"
             onSubmit={handleSubmit(handleRegisterFun)}
           >
             {/* Name Field */}
@@ -154,12 +159,16 @@ const RegisterPage = () => {
             </div>
 
             {/* Register Button */}
-            <div className="form-control mt-4">
+            <div className="form-control mt-6">
               <button
                 disabled={isLoading}
-                className="btn bg-slate-800 text-white hover:bg-slate-700"
+                className="btn bg-slate-800 text-white hover:bg-slate-700 border-none w-full"
               >
-                {isLoading ? "Registering..." : "Register"}
+                {isLoading ? (
+                  <span className="loading loading-spinner loading-sm"></span>
+                ) : (
+                  "Create Account"
+                )}
               </button>
             </div>
           </form>
