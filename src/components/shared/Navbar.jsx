@@ -62,11 +62,11 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <Link
-            href="/"
-            className="text-2xl md:text-3xl font-extrabold text-purple-600 italic tracking-tight"
-          >
-            MangoBook
+          <Link href="/" className="relative group flex items-center">
+            <span className="text-2xl md:text-3xl font-black italic tracking-tighter bg-clip-text text-transparent bg-linear-to-r from-purple-600 via-pink-500 to-purple-800 animate-gradient-x hover:scale-105 transition-transform duration-300">
+              MangoBook
+            </span>
+            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-linear-to-r from-purple-600 to-pink-500 transition-all duration-500 group-hover:w-full rounded-full"></span>
           </Link>
         </div>
 
