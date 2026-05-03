@@ -64,7 +64,7 @@ const Navbar = () => {
           </div>
           <Link
             href="/"
-            className="text-xl md:text-2xl font-bold text-purple-600 italic"
+            className="text-2xl md:text-3xl font-extrabold text-purple-600 italic tracking-tight"
           >
             MangoBook
           </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
           ) : user ? (
             <div className="flex items-center gap-2 md:gap-3">
               <span className="hidden sm:inline-block font-semibold text-gray-700">
-                {user.name.split(" ")[0]}{" "}
+                {user.name.split(" ")[0]}
               </span>
               <button
                 onClick={async () => await authClient.signOut()}
@@ -92,12 +92,20 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <Link
-              href="/login"
-              className="btn btn-xs md:btn-sm bg-purple-600 text-white border-none px-4 md:px-6"
-            >
-              Login
-            </Link>
+            <div className="flex items-center gap-3">
+              <Link
+                href="/login"
+                className="btn btn-sm md:btn-md bg-purple-600 border-purple-600 border-none text-white px-5 md:px-8 text-base font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-purple-700"
+              >
+                Sign In
+              </Link>
+              <Link
+                href="/register"
+                className="btn btn-sm md:btn-md bg-purple-600 text-white border-none px-5 md:px-8 text-base font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-purple-700"
+              >
+                Sign Up
+              </Link>
+            </div>
           )}
         </div>
       </div>
