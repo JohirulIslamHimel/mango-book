@@ -13,7 +13,7 @@ const BookSlider = ({ books }) => {
   return (
     <div className="container mx-auto px-4 my-10">
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
-        Featured <span className="text-purple-600">Books</span>
+        Trending <span className="text-purple-600">Books</span>
       </h2>
 
       <Swiper
