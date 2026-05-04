@@ -11,7 +11,7 @@ export default async function AllBooksPage() {
     <div className="container mx-auto p-6 min-h-screen">
       {/* Search Bar */}
       <div className="mb-10 text-center">
-        <h1 className="text-3xl font-bold mb-4">Explore All Books</h1>
+        <h1 className="text-3xl font-bold mb-4">Explore All Books.</h1>
       </div>
 
       <BookListWithSearch books={books}></BookListWithSearch>
