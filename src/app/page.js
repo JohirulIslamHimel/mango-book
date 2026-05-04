@@ -8,7 +8,11 @@ import Status from "@/components/home/Status";
 import BookSlider from "@/components/BookSlider";
 
 const HomePage = async () => {
-  const baseUrl = process.env.BETTER_AUTH_URL;
+  // const baseUrl = process.env.BETTER_AUTH_URL;
+
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
 
   const res = await fetch(`${baseUrl}/books.json`, {
     cache: "no-store",
