@@ -8,7 +8,7 @@ import Status from "@/components/home/Status";
 import BookSlider from "@/components/BookSlider";
 
 const HomePage = async () => {
-  const res = await fetch("http://localhost:3000/books.json", {
+  const res = await fetch("https://mangoo-book.vercel.app/books.json", {
     cache: "no-store",
   });
   const books = await res.json();
