@@ -9,6 +9,7 @@ import BookSlider from "@/components/BookSlider";
 
 const HomePage = async () => {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const res = await fetch(`${baseUrl}/books.json`, {
     cache: "no-store",
   });
