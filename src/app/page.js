@@ -8,7 +8,7 @@ import Status from "@/components/home/Status";
 import BookSlider from "@/components/BookSlider";
 
 const HomePage = async () => {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseUrl = process.env.BETTER_AUTH_URL;
 
   const res = await fetch(`${baseUrl}/books.json`, {
     cache: "no-store",
